@@ -48,7 +48,7 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home delivery and Online reservation systen for restaurants and cafes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vB3-wa-Du2">
                                                             <rect key="frame" x="0.0" y="90" width="382" height="37"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -329,7 +329,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="yGJ-Tt-jlm">
-                        <barButtonItem key="backBarButtonItem" title=" " id="6uW-sq-UoV"/>
                         <barButtonItem key="rightBarButtonItem" image="cart.circle.fill" catalog="system" id="yIZ-vZ-leo">
                             <color key="tintColor" red="0.80967867370000002" green="0.28454688189999999" blue="0.13325515390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
@@ -428,7 +427,7 @@
                                                 <attributes>
                                                     <color key="NSColor" systemColor="systemGrayColor"/>
                                                     <font key="NSFont" metaFont="system" size="15"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>

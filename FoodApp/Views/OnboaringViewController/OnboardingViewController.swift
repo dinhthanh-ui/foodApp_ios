@@ -39,6 +39,8 @@ class OnboardingViewController: UIViewController {
         
         pageControl.numberOfPages = slides.count
     }
+    
+//    func screen rotation lock
     override func viewWillAppear(_ animated: Bool) {
         AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
     }
@@ -49,6 +51,7 @@ class OnboardingViewController: UIViewController {
             let controller = storyboard?.instantiateViewController(withIdentifier: "HomeNc") as!UINavigationController
             controller.modalTransitionStyle = .flipHorizontal
             controller.modalPresentationStyle = .fullScreen
+            UserDefaults.standard.hasOnboarded = true
             present(controller, animated: true, completion: nil)
         }
         else{

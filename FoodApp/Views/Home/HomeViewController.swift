@@ -84,7 +84,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let collection = ListDishesViewController.instantiate()
             collection.category = categories[indexPath.row]
             navigationController?.pushViewController(collection, animated: true)
-            
+
         }
         else{
             let collection = DishDetailViewController.instantiate()

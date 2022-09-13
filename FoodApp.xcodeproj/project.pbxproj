@@ -31,9 +31,9 @@
 		527AAF8E28C9C5F600763753 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527AAF8D28C9C5F600763753 /* ListDishesViewController.swift */; };
 		527AAF9228C9D64300763753 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527AAF9128C9D64300763753 /* ListOrdersViewController.swift */; };
 		527AAF9428C9D89700763753 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527AAF9328C9D89700763753 /* Order.swift */; };
+		529AD3F428D0345500B872D1 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529AD3F328D0345500B872D1 /* UserDefaults+Extensions.swift */; };
 		52B5007428C4DBDA00FE7FB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B5007328C4DBDA00FE7FB7 /* AppDelegate.swift */; };
 		52B5007628C4DBDA00FE7FB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B5007528C4DBDA00FE7FB7 /* SceneDelegate.swift */; };
-		52B5007828C4DBDA00FE7FB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B5007728C4DBDA00FE7FB7 /* ViewController.swift */; };
 		52B5007B28C4DBDA00FE7FB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B5007928C4DBDA00FE7FB7 /* Main.storyboard */; };
 		52B5007D28C4DBDF00FE7FB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B5007C28C4DBDF00FE7FB7 /* Assets.xcassets */; };
 		52B5008028C4DBDF00FE7FB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B5007E28C4DBDF00FE7FB7 /* LaunchScreen.storyboard */; };
@@ -70,10 +70,10 @@
 		527AAF8D28C9C5F600763753 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		527AAF9128C9D64300763753 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		527AAF9328C9D89700763753 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		529AD3F328D0345500B872D1 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		52B5007028C4DBDA00FE7FB7 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B5007328C4DBDA00FE7FB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52B5007528C4DBDA00FE7FB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52B5007728C4DBDA00FE7FB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52B5007A28C4DBDA00FE7FB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52B5007C28C4DBDF00FE7FB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52B5007F28C4DBDF00FE7FB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -153,6 +153,7 @@
 				523B65F328C539C80010E1DC /* UIView+Extensions.swift */,
 				5211A01828C6C9EE0012AC56 /* String+Extensions.swift */,
 				527AAF8A28C9B0C700763753 /* UIViewController+Extension.swift */,
+				529AD3F328D0345500B872D1 /* UserDefaults+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -267,7 +268,6 @@
 				523B65EB28C500AE0010E1DC /* Models */,
 				52B5007528C4DBDA00FE7FB7 /* SceneDelegate.swift */,
 				52B5007328C4DBDA00FE7FB7 /* AppDelegate.swift */,
-				52B5007728C4DBDA00FE7FB7 /* ViewController.swift */,
 				52B5007928C4DBDA00FE7FB7 /* Main.storyboard */,
 				52B5007C28C4DBDF00FE7FB7 /* Assets.xcassets */,
 				52B5007E28C4DBDF00FE7FB7 /* LaunchScreen.storyboard */,
@@ -431,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				527AAF8E28C9C5F600763753 /* ListDishesViewController.swift in Sources */,
+				529AD3F428D0345500B872D1 /* UserDefaults+Extensions.swift in Sources */,
 				527AAF8B28C9B0C700763753 /* UIViewController+Extension.swift in Sources */,
 				523B65F428C539C80010E1DC /* UIView+Extensions.swift in Sources */,
 				52F5053028C7D5C300436BA7 /* popularCollectionViewCell.swift in Sources */,
@@ -440,7 +441,6 @@
 				5220BEDE28CA61620000EDAD /* NetwrokiService.swift in Sources */,
 				527AAF9428C9D89700763753 /* Order.swift in Sources */,
 				5220BEE228CA62F80000EDAD /* Method.swift in Sources */,
-				52B5007828C4DBDA00FE7FB7 /* ViewController.swift in Sources */,
 				5220BEE028CA62480000EDAD /* Route.swift in Sources */,
 				527AAF9228C9D64300763753 /* ListOrdersViewController.swift in Sources */,
 				52B5007428C4DBDA00FE7FB7 /* AppDelegate.swift in Sources */,
@@ -609,7 +609,6 @@
 				INFOPLIST_FILE = FoodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft";
@@ -641,7 +640,6 @@
 				INFOPLIST_FILE = FoodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft";

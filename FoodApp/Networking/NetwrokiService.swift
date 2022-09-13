@@ -81,6 +81,7 @@ struct NetworkService{
             completion(.failure(error))
         }
     }
+    
     /// This function helps us to generate a urlRequest
     ///  - Parameters:
     ///     - route: the path the resoure in the backend
